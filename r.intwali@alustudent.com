@@ -2,7 +2,7 @@
 
 class Assignment:
     """
-    Class to represent an individual assignment with its properties
+    Class to represent an individual assignments 
     """
 
     def __init__(self, name, assign_type, score, weight):
@@ -23,7 +23,7 @@ class Assignment:
 
 class GradeCalculator:
     """
-    Class to manage assignments and calculate grades
+    Class to manage assignments and calculate grades of students
     """
 
     def __init__(self):
@@ -119,7 +119,7 @@ def main():
     print(calculator.check_progression())
     print(calculator.check_resubmission())
 
-    # Ask for transcript order preference
+    # Ask for transcript order the student want
     order = input("\nDisplay transcript in ascending or descending order? (a/d): ").lower()
     print(calculator.generate_transcript(ascending=(order == 'a')))
 
